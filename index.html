@@ -17,7 +17,7 @@
 <body>
  <img src="http://6336-presscdn-26-82.pagely.netdna-cdn.com/wp-content/uploads/2012/12/psychic.jpg">
  <p>Guess what letter I'm thinking of?</p>
-     
+
      <div>
      	<h4 id="wins"> Wins:</h4>
      </div>
@@ -32,35 +32,26 @@
      	 <h4 id="userGuessess">Your Guesses so far:</h4>
      </div>
 
-<script type="text/javascript">  
-//  computer generate random letters
+<script type="text/javascript">
 // display wins, losses, guesses left, guesses so far
 //  user choose letter 'computer read letter'
 // check user letter against random generated letter
-// option 1 (user guest correct) 
- // option 2 (user guest incorrect) 
+// option 1 (user guest correct)
+ // option 2 (user guest incorrect)
   // sub option 1( game contunie if guest is left greater then 0)
   // sub option 2 ( game ends if guest is left is 0)
-   
 
+
+	//  computer generate random letters
      function generateRandomLetter () {
         var letters = "abcdefghijklmnopqrstuvwxyz";
-        console.log( letters.charAt(getRandomInt(0, 24)));
-        return letters.chartAt(getRandomInt(0, 24));
+        return letters.charAt(getRandomInt(0, letters.length - 1));
      }
-       
-     generateRandomLetter(); 
 
      function getRandomInt(min, max) {
-           min = Math.ceil(min);
-           max = Math.floor(max);
-           return Math.floor(Math.random() * (max - min)) + min;
-           
+        return Math.floor(Math.random() * (max - min)) + min;
+			}
 
-
-  
-  
-  
    </script>
 
 

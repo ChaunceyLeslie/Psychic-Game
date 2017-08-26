@@ -1,1 +1,3 @@
 # Psychic-Game
+
+## My Thoughts
